@@ -3708,10 +3708,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.PostgreSQLProvider\\Dungeonlab.SpellCompendium.PostgreSQLProvider.csproj",
+      "projectUniqueName": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.PostgreSQLProvider\\Dungeonlab.SpellCompendium.PostgreSQLProvider.csproj",
       "projectName": "Dungeonlab.SpellCompendium.PostgreSQLProvider",
-      "projectPath": "E:\\Dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.PostgreSQLProvider\\Dungeonlab.SpellCompendium.PostgreSQLProvider.csproj",
-      "outputPath": "E:\\Dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.PostgreSQLProvider\\obj\\",
+      "projectPath": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.PostgreSQLProvider\\Dungeonlab.SpellCompendium.PostgreSQLProvider.csproj",
+      "outputPath": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.PostgreSQLProvider\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"

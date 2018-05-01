@@ -686,6 +686,19 @@
           "lib/netstandard1.3/System.Runtime.Numerics.dll": {}
         }
       },
+      "System.Runtime.Serialization.Primitives/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
+        }
+      },
       "System.Security.Cryptography.Algorithms/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -885,6 +898,14 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
+        }
+      },
+      "Dungeonlab.SpellCompendium.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Runtime.Serialization.Primitives": "4.3.0"
         }
       }
     }
@@ -2982,6 +3003,77 @@
         "system.runtime.numerics.nuspec"
       ]
     },
+    "System.Runtime.Serialization.Primitives/4.3.0": {
+      "sha512": "T1aUB7IPIg5xCDcHPJXi7oLehCa6qBWjJS010kq2BYH2QenWaHXu34RB7GV59eamxBI7NhWfJitWXHi1oTHhkA==",
+      "type": "package",
+      "path": "system.runtime.serialization.primitives/4.3.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.Runtime.Serialization.Primitives.dll",
+        "lib/netcore50/System.Runtime.Serialization.Primitives.dll",
+        "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.Runtime.Serialization.Primitives.dll",
+        "ref/netcore50/System.Runtime.Serialization.Primitives.dll",
+        "ref/netcore50/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/de/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/es/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/fr/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/it/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/ja/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/ko/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/ru/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/zh-hant/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/System.Runtime.Serialization.Primitives.dll",
+        "ref/netstandard1.0/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/de/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/es/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/fr/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/it/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/ja/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/ko/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/ru/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/System.Runtime.Serialization.Primitives.dll",
+        "ref/netstandard1.3/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/de/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/es/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/fr/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/it/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/ja/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/ko/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/ru/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/zh-hant/System.Runtime.Serialization.Primitives.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll",
+        "system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
+        "system.runtime.serialization.primitives.nuspec"
+      ]
+    },
     "System.Security.Cryptography.Algorithms/4.3.0": {
       "sha512": "Pop1qc4UQhuet0imDdyPNH+RkqJ0PxWRAYVSq2PDpV6uANl+889LYRWW1n/YC8ZrxGFwMja16GCIrNzzTQfDtw==",
       "type": "package",
@@ -3695,10 +3787,16 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Dungeonlab.SpellCompendium.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Dungeonlab.SpellCompendium.Domain/Dungeonlab.SpellCompendium.Domain.csproj",
+      "msbuildProject": "../Dungeonlab.SpellCompendium.Domain/Dungeonlab.SpellCompendium.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v1.4": [
+      "Dungeonlab.SpellCompendium.Domain >= 1.0.0",
       "NETStandard.Library >= 1.6.1"
     ]
   },
@@ -3708,17 +3806,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.FileProvider\\Dungeonlab.SpellCompendium.FileProvider.csproj",
+      "projectUniqueName": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.FileProvider\\Dungeonlab.SpellCompendium.FileProvider.csproj",
       "projectName": "Dungeonlab.SpellCompendium.FileProvider",
-      "projectPath": "E:\\Dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.FileProvider\\Dungeonlab.SpellCompendium.FileProvider.csproj",
-      "outputPath": "E:\\Dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.FileProvider\\obj\\",
+      "projectPath": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.FileProvider\\Dungeonlab.SpellCompendium.FileProvider.csproj",
+      "outputPath": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.FileProvider\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"
       ],
       "frameworks": {
         "netstandard1.4": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.Domain\\Dungeonlab.SpellCompendium.Domain.csproj": {
+              "projectPath": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.Domain\\Dungeonlab.SpellCompendium.Domain.csproj"
+            }
+          }
         }
       }
     },

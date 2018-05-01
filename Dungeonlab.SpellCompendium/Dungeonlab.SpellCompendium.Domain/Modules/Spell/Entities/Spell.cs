@@ -21,12 +21,6 @@ namespace Dungeonlab.SpellCompendium.Domain.Modules.Spell.Entities
         [DataMember(Name = "type")]
         public string Type { get; set; }
 
-        [DataMember(Name = "duration")]
-        public string Duration { get; set; }
-
-        [DataMember(Name = "range")]
-        public int Range { get; set; }
-
         [DataMember(Name = "components")]
         public ICollection<SpellComponent> Components { get; set; }
 
@@ -36,7 +30,13 @@ namespace Dungeonlab.SpellCompendium.Domain.Modules.Spell.Entities
         [DataMember(Name = "savestat")]
         public string SaveStat { get; set; }
 
-        [DataMember(Name = "element")]
-        public string Element { get; set; }
+        [DataMember(Name = "isritual")]
+        public bool IsRitual { get; set; }
+
+        [DataMember(Name = "isconcentration")]
+        public bool IsConcentration { get; set; }
+
+        [DataMember(Name = "sourcebook")]
+        public string SourceBook { get; set; }
     }
 }

@@ -3,12 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Dungeonlab.SpellCompendium.Domain.Repositories;
+using Microsoft.Extensions.Logging;
 
 namespace Dungeonlab.SpellCompendium.RestApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/spells")]
     public class ValuesController : Controller
     {
+        private readonly ISpellRepository _spellRepository;
+        private readonly ILogger<ValuesController> _logger;
+        
+        public ValuesController(ILogger<ValuesController> logger, ISpellRepository spellRepository)
+        {
+            _logger = logger;
+            _spellRepository = spellRepository;
+        }
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -18,9 +29,29 @@ namespace Dungeonlab.SpellCompendium.RestApi.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IActionResult Get(int id)
         {
-            return "value";
+            try
+            {
+                if (id > 0)
+                {
+                    var spell = _spellRepository.Get(id);
+                    if (spell != null)
+                        return Ok(spell);
+                    else
+                        return NotFound();
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"There was an error retrieving element {id}. Ex: {ex}");
+                return BadRequest();
+            }
+            
         }
 
         // POST api/values

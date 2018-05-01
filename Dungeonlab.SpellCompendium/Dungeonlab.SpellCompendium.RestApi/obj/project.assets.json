@@ -3594,6 +3594,22 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Dungeonlab.SpellCompendium.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Runtime.Serialization.Primitives": "4.3.0"
+        }
+      },
+      "Dungeonlab.SpellCompendium.FileProvider/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v1.4",
+        "dependencies": {
+          "Dungeonlab.SpellCompendium.Domain": "1.0.0",
+          "NETStandard.Library": "1.6.1"
+        }
       }
     }
   },
@@ -9646,10 +9662,22 @@
         "system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Dungeonlab.SpellCompendium.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Dungeonlab.SpellCompendium.Domain/Dungeonlab.SpellCompendium.Domain.csproj",
+      "msbuildProject": "../Dungeonlab.SpellCompendium.Domain/Dungeonlab.SpellCompendium.Domain.csproj"
+    },
+    "Dungeonlab.SpellCompendium.FileProvider/1.0.0": {
+      "type": "project",
+      "path": "../Dungeonlab.SpellCompendium.FileProvider/Dungeonlab.SpellCompendium.FileProvider.csproj",
+      "msbuildProject": "../Dungeonlab.SpellCompendium.FileProvider/Dungeonlab.SpellCompendium.FileProvider.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
+      "Dungeonlab.SpellCompendium.Domain >= 1.0.0",
+      "Dungeonlab.SpellCompendium.FileProvider >= 1.0.0",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.0.0",
       "Microsoft.AspNetCore >= 1.1.2",
       "Microsoft.AspNetCore.Mvc >= 1.1.3",
@@ -9663,17 +9691,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.RestApi\\Dungeonlab.SpellCompendium.RestApi.csproj",
+      "projectUniqueName": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.RestApi\\Dungeonlab.SpellCompendium.RestApi.csproj",
       "projectName": "Dungeonlab.SpellCompendium.RestApi",
-      "projectPath": "E:\\Dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.RestApi\\Dungeonlab.SpellCompendium.RestApi.csproj",
-      "outputPath": "E:\\Dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.RestApi\\obj\\",
+      "projectPath": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.RestApi\\Dungeonlab.SpellCompendium.RestApi.csproj",
+      "outputPath": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.RestApi\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "frameworks": {
         "netcoreapp1.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.FileProvider\\Dungeonlab.SpellCompendium.FileProvider.csproj": {
+              "projectPath": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.FileProvider\\Dungeonlab.SpellCompendium.FileProvider.csproj"
+            },
+            "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.Domain\\Dungeonlab.SpellCompendium.Domain.csproj": {
+              "projectPath": "E:\\GitHub\\dungeonlab\\Dungeonlab.SpellCompendium\\Dungeonlab.SpellCompendium.Domain\\Dungeonlab.SpellCompendium.Domain.csproj"
+            }
+          }
         }
       }
     },

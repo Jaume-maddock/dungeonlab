@@ -8,10 +8,10 @@ namespace Dungeonlab.SpellCompendium.Domain.Modules.Spell.ValuedObjects
     [DataContract]
     public class SpellComponent
     {
-        [DataMember(Name = "casttime")]
+        [DataMember(Name = "type")]
         public string Type { get; set; }
 
-        [DataMember(Name = "casttime")]
+        [DataMember(Name = "requirement")]
         public string Requirement { get; set; }
     }
 }

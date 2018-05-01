@@ -11,6 +11,9 @@ namespace Dungeonlab.SpellCompendium.Domain.Modules.Spell.ValuedObjects
         [DataMember(Name = "type")]
         public string Type { get; set; }
 
+        [DataMember(Name = "element")]
+        public string Element { get; set; }
+
         [DataMember(Name = "levelspelleffects")]
         public ICollection<LevelSpellEffect> LevelSpellEffects { get; set; }
     }
@@ -29,5 +32,11 @@ namespace Dungeonlab.SpellCompendium.Domain.Modules.Spell.ValuedObjects
 
         [DataMember(Name = "effectrange")]
         public int EffectRange { get; set; }
+
+        [DataMember(Name = "duration")]
+        public string Duration { get; set; }
+
+        [DataMember(Name = "range")]
+        public int Range { get; set; }
     }
 }
